@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+   <category>
+      <pattern>
+        Iniciar
+      </pattern>
+      <template>
+         Iae, Seja bem vindo ao nosso chat-bot .
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+        Iae bot
+      </pattern>
+      <template>
+         Iae, qual seu nome ?
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+         meu nome é *
+      </pattern>
+      <template>
+        Muito Prazer <set name="name"><star/></set> ,  irei te trazer algumas informações sobre algumas bandas da cena underground brasileira .
+      </template>
+   </category>
+
+   <category>
+      <pattern>QUAIS BANDAS</pattern>
+      <template> Escolha entre as bandas,
+        - Ponto Nulo no Céu <br/>
+        - Pense HC  <br/>
+        - Menores Atos  <br/>
+        - Medulla <br/>
+        - John Wayne <br/>
+        - Project 46 <br/>
+        - Bullet Bane <br/>
+        - A Ultima Theoria <br/>
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+        Banda *
+      </pattern>
+      <template>
+          Parabéns <get name="name"></get>, você escolheu a banda <set name="banda"><star/></set> .
+          O que gostaria de saber sobre a banda ? <br/>
+         - sobre <br/>
+         - facebook <br/>
+         - youtube <br/>
+         - instagram <br/>
+         - onde ouvir <br/>
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+         sobre
+      </pattern>
+      <template>
+          <condition name="banda">
+            <li value="Ponto Nulo no Céu">Nasce no início de 2007 a Ponto Nulo no Céu, banda Catarinense inicialmente formada por Dijjy, Vinícius, Júlio e Henrique. Cercado de letras profundas que expressam sentimentos de desgosto em relação ao mundo em que vivemos, este trabalho não entrega ao ouvinte apenas os problemas de um planeta em decadência, mas busca fazer com que as pessoas arranquem as forças necessárias de si próprias para lutarem, enfrentarem os obstáculos da vida e se tornarem vencedoras de seus próprios desafios. Em meados de 2009, na luta contínua por força e respeito ao underground nacional, a banda ganha o apoio de um novo membro na família, André Bresiani, um guitarrista talentoso que chega com muita vontade de fazer realmente a coisa acontecer. Em 2012, Após se apresentar por vários estados e eventos já consagrados no cenário underground, a banda sofre uma mudança na formação e dá boas-vindas ao baterista Fabrício Sombrio. </li>
+            <li value="Pense HC">Pense é uma banda de BH/MG nascida em 2007. Agregando velocidade, peso e melodia, com letras que tenham relevância</li>
+            <li value="Menores Atos">Após alguns anos de descanso e mudanças na formação, o trio carioca menores atos retomou de vez as atividades em 2014, quando foi lançado o álbum "animalia", gravado e mixado por Gabriel Zander, no estúdio Superfuzz. O som é o que podemos chamar de rock alternativo e mostrao amadurecimento dos integrantes, tanto no que diz respeito às composições quanto à forma de enxergar a vida e o outro. O menores atos hoje é formado por Cyro Sampaio (guitarra e voz), Celso Lehnemann (baixo) e Ricardo Mello (bateria e voz). Felizmente, o "animalia" teve ótima repercussão e recebeu diversas críticas positivas, chegando a ter posição de destaque na lista dos 50 melhores discos do ano (2014) pelo portal de música Tenho Mais Discos Que Amigos!</li>
+            <li value="Medulla">Formada pelos gêmeos pernambucanos Keops e Raony nos vocais e os paulistas Tuti AC e Alex Vinícius, o Medulla nasceu em 2005, com o lançamento do álbum O Fim da Trégua pela Sony. O show do álbum de estreia foi revelação do Festival Abril pro Rock pelo jornal O Globo e alcançou visibilidade nacional. Desde então, a banda tem desenvolvido sua mistura única de rock, jazz, hip hop, manguebeat e ritmos brasileiros, conquistando grande protagonismo na cena independente.</li>
+            <li value="John Wayne">Formada em São Paulo em 2009, a banda John Wayne vem ganhando rápido destaque no rock nacional. Com um EP homônimo (2011) e um álbum na bagagem, “Tempestade” (2012), o grupo prepara-se para lançar seu novo trabalho, “Dois Lados – Parte I”, pela primeira vez com uma gravadora, a Deck.</li>
+            <li value="Project 46">Nascendo das ruas arenosas e caóticas da segunda maior megatropolis do mundo, São Paulo, Brasil, o Project46 vem destruindo a cena metal na maior cidade da América do Sul nos últimos anos. O quinteto é formado por Jean Patton e Vini Castellari, guitarristas e amigos de infância, que se transformaram de uma banda de tributo a Slipknot (na qual o nome da banda presta homenagem) em sua atual encarnação como a banda de metal preeminente, mais pesada e mais consistente em todo o Brasil.</li>
+            <li value="Bullet Bane">O Bullet Bane é uma banda de São Paulo que deu início às suas atividades em 2009. Lançou seu primeiro trabalho, intitulado We Took Off, nesse mesmo ano quando a banda ainda se chamava Take Off The Halter. A mudança de nome aconteceu em 2011 devido à ambiguidade de sentidos possíveis, o que poderia de alguma forma desvirtuar as reais intenções de expressão da banda.</li>
+            <li value="A Ultima Theoria">Fundada em 2010, de Goiânia . Toda conduta, expressão, argumento ou manifestação do EU surgem através de ideais que adotamos a nossa vida no decorrer da nossa jornada. Nesse tabuleiro em preto e branco existem escadas a se prosseguir e pilares onde nos apoiaremos. Só após a idagação da nossa imagem e semelhança, estaremos realmente preparados pra olhar no espelho e buscar entender nós mesmos. Reto ou torto, em cima ou em baixo, por meios destintos todos os caminhos chegaram a mesma porta. Somos uma só consciência se dividindo e buscando a compreensão das partes para uma futura revolução. Longe da carne ou do sangue, continuamos nossa luta hoje, amanha e ontem novamente! Busque se conhecer, escute a voz que te guia, ressuscite em sí mesmo.</li>
+            <li>Você ainda não escolheu a banda, por favor escolha antes ..</li>
+          </condition>
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+         facebook
+      </pattern>
+      <template>
+          <condition name="banda">
+            <li value="Ponto Nulo no Céu">http://facebook.com/pontonulonoceu</li>
+            <li value="Pense HC">https://www.facebook.com/pensehc</li>
+            <li value="Menores Atos">https://www.facebook.com/menoresatosoficial/</li>
+            <li value="Medulla">https://www.facebook.com/MedullaOficial/</li>
+            <li value="John Wayne">https://www.facebook.com/BandaJohnWayne/</li>
+            <li value="Project 46">https://www.facebook.com/Project46</li>
+            <li value="Bullet Bane">https://www.facebook.com/bulletbane/</li>
+            <li value="A Ultima Theoria">https://www.facebook.com/AUltimaTheoria/</li>
+            <li>Você ainda não escolheu a banda, por favor escolha antes ..</li>
+          </condition>
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+         instagram
+      </pattern>
+      <template>
+          <condition name="banda">
+            <li value="Ponto Nulo no Céu">http://instagram.com/pnnc_oficial</li>
+            <li value="Pense HC">http://instagram.com/penseoficial</li>
+            <li value="Menores Atos">https://instagram.com/menoresatos/</li>
+            <li value="Medulla">https://www.instagram.com/medullaoficial/</li>
+            <li value="John Wayne">https://www.instagram.com/bandajohnwayne/</li>
+            <li value="Project 46">http://instagram.com/project46_oficial</li>
+            <li value="Bullet Bane">https://www.instagram.com/bulletbane/</li>
+            <li value="A Ultima Theoria">https://www.instagram.com/aultimatheoria/</li>
+            <li>Você ainda não escolheu a banda, por favor escolha antes ..</li>
+          </condition>
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+         youtube
+      </pattern>
+      <template>
+          <condition name="banda">
+            <li value="Ponto Nulo no Céu">https://www.youtube.com/pontonulonoceu1</li>
+            <li value="Pense HC">https://www.youtube.com/user/pensehardcore</li>
+            <li value="Menores Atos">https://www.youtube.com/channel/UCJ6xYhkkRmKbR3xpaxfMOrA</li>
+            <li value="Medulla">https://www.youtube.com/user/medullarock</li>
+            <li value="John Wayne">https://www.youtube.com/user/JOHNWAYNEMUSIC</li>
+            <li value="Project 46">https://www.youtube.com/user/project46brazil</li>
+            <li value="Bullet Bane">https://www.youtube.com/user/bulletbanetv</li>
+            <li value="A Ultima Theoria">https://www.youtube.com/user/aultimatheoria</li>
+            <li>Você ainda não escolheu a banda, por favor escolha antes ..</li>
+          </condition>
+      </template>
+   </category>
+
+   <category>
+      <pattern>
+         onde ouvir
+      </pattern>
+      <template>
+          <condition name="banda">
+            <li value="Ponto Nulo no Céu">http://pontonulonoceu.com.br/</li>
+            <li value="Pense HC">http://www.penseoficial.com.br/</li>
+            <li value="Menores Atos">http://www.menoresatos.com.br/</li>
+            <li value="Medulla">https://www.hbbrecords.com/medulla/</li>
+            <li value="John Wayne">http://www.johnwayne.com.br/</li>
+            <li value="Project 46">http://www.project46.com.br/p46/</li>
+            <li value="Bullet Bane">https://bulletbane.bandcamp.com/</li>
+            <li value="A Ultima Theoria">https://www.youtube.com/user/aultimatheoria</li>
+            <li>Você ainda não escolheu a banda, por favor escolha antes ..</li>
+          </condition>
+      </template>
+   </category>
+
+</aiml>
