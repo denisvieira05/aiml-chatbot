@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack && webpack-dev-server",
-    "build": "NODE_ENV=production webpack --env.prod=true"
+    "build": "NODE_ENV=production webpack --env.prod=true",
+    "postinstall": "npm install"
   },
   "devDependencies": {
     "axios": "^0.15.3",
