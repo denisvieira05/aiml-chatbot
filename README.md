@@ -30,7 +30,7 @@ $ pb compile
 - Install dependencies and Start application
 ```
   $ npm install
-  $ npm start
+  $ npm dev
 ```
 
 - open in http://localhost:3000/
