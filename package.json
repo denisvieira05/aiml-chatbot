@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "webpack && webpack-dev-server",
+    "start": "node server.js"
   },
   "devDependencies": {
     "axios": "^0.15.3",
