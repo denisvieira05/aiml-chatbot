@@ -27,6 +27,13 @@
       </template>
    </category>
 
+  <category>
+     <pattern>tchau bot</pattern>
+     <template>
+        Até mais <set name="name"><star/></set>, compartilhe e continue apoiando o underground, FAÇA VOCÊ MESMO !
+     </template>
+   </category>
+
    <category>
       <pattern>QUAIS BANDAS</pattern>
       <template> Escolha entre as bandas,

@@ -1,6 +1,8 @@
 # aiml-chatbot
 
-IA chat-bot interface using [pandorabots](https://www.pandorabots.com/) API .
+IA aiml chat-bot interface using [pandorabots](https://www.pandorabots.com/) API .
+
+![demo](undergroundbands.gif)
 
 ## How to use
 - Clone Repository
